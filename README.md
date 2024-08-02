@@ -111,9 +111,7 @@ create_clock -period 10.000 -name clk [get_ports clk]
 # Set input delay constraints for the input ports `rst_n` and `duty`. These
 # constraints define the maximum allowable delay from the clock edge to the 
 # arrival of input signals, ensuring they are sampled correctly by the FPGA.
-# This setup prevents timing violations, similar to
-
- ensuring that biological 
+# This setup prevents timing violations, similar to ensuring that biological 
 # inputs are received and processed in a timely manner.
 set_input_delay -clock clk 0.000 [get_ports {rst_n duty[*]}]
 
