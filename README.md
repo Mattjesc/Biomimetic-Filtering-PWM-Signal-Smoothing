@@ -1,5 +1,9 @@
 # Biomimetic Filtering for PWM Signal Smoothing
 
+![Project Meme (3)](https://github.com/user-attachments/assets/b3e45e4b-56b1-49c7-ba8c-05660c0e1cfc)
+
+![HighLevelOverview](https://github.com/user-attachments/assets/7f7f177a-5e67-40b1-b644-feb1abbb56a4)
+
 This project explores a biomimetic approach to signal smoothing using an FPGA to implement PWM signal generation and IIR filtering. The design is inspired by natural systems' ability to filter and process signals efficiently, as detailed in [A Software Method for Generating Concurrent PWM Signal from Pic18f4520 for Biomimetic Robotic Fish Control](https://github.com/user-attachments/assets/A_Software_Method_for_Generating_Concurrent_Pwm_Si.pdf) and [Biomimetic Frame-Free HDR Camera with Event-Driven PWM Image/Video Sensor and Full-Custom Address-Event Processor](https://github.com/user-attachments/assets/BioCAS2010_Posch_etal.pdf). This project demonstrates how these concepts can be applied to digital signal processing using an FPGA.
 
 ## Overview
@@ -161,7 +165,7 @@ The simulation waveforms provide insights into the module's internal operations 
 
 #### Waveform 1: Low Duty Cycle PWM Signal and Filtered Output
 
-![Waveform 1](https://github.com/user-attachments/assets/SimulationWaveform1.png)
+![SimulationWaveform1](https://github.com/user-attachments/assets/e3696263-5bd0-4686-9154-fcb84df59935)
 
 In this waveform, the PWM signal (`pwm_out`) with a low duty cycle (value 40) is shown. The corresponding filtered output (`filtered_out`) demonstrates a gradual rise, reflecting the low-pass filtering action of the IIR filter. The smoothness of the filtered output compared to the PWM input indicates effective attenuation of high-frequency components, akin to how biological systems smooth out abrupt changes in sensory inputs.
 
@@ -172,7 +176,7 @@ In this waveform, the PWM signal (`pwm_out`) with a low duty cycle (value 40) is
 
 #### Waveform 2: High Duty Cycle PWM Signal and Filtered Output
 
-![Waveform 2](https://github.com/user-attachments/assets/SimulationWaveform2.png)
+![SimulationWaveform2](https://github.com/user-attachments/assets/ae42496c-4c56-4c73-a16a-a0329171e7be)
 
 This waveform depicts the system's response to a PWM signal with a high duty cycle (value 255). The `pwm_out` signal shows long high periods, corresponding to a higher average voltage. The filtered output (`filtered_out`) exhibits significant smoothing, though with visible ripples due to the high input amplitude.
 
