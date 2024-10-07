@@ -344,4 +344,4 @@ The implementation phase has successfully translated the design into a routed an
 
 ## Disclaimer
 
-This project is intended for educational purposes and portfolio demonstration. It was developed and tested using the Vivado 2020.2 toolset, targeting the Nexys4 DDR board with the xc7a100tcsg324-1 FPGA. While the design is verified through simulation, no physical hardware testing has been conducted. The work builds upon concepts from referenced biomimetic research, with significant modifications and enhancements.# Biomimetic-Filtering-PWM-Signal-Smoothing
+This project is intended for educational purposes and portfolio demonstration. It was developed and tested using the Vivado 2020.2 toolset, targeting the Nexys4 DDR board with the xc7a100tcsg324-1 FPGA. While the design is verified through simulation, no physical hardware testing has been conducted. The work builds upon concepts from referenced biomimetic research, with significant modifications and enhancements.
